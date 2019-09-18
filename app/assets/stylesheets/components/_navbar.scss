@@ -1,40 +1,44 @@
 .navbar {
   position: fixed;
   left: 0;
-  width: 90px;
+  width: 110px;
   height: 100vh;
   .navbar-list {
-    width: 50px;
+    width: 59px;
     padding-left: 0;
     .nav-item{
+          box-shadow: 0 2px 16px rgba(0, 0, 0, .3);
       transition: all .4s ease;
-      text-align: center;
       list-style: none;
-      // background-color: white;
       border: 3px solid white;
       border-radius: 55px;
-      padding: 8px;
-      height: 50px;
+      padding: 12px;
+      height: 59px;
       width: 100%;
       overflow: hidden;
       .nav-link {
+        transition: all .4s ease;
         display: flex;
         align-items: center;
         padding: 0;
         justify-content: flex-start;
         .navbar-icons {
-          line-height: 0.5;
+          transition: all .4s ease;
           color: white;
           font-size: 26px;
         }
         .nav-text {
-          padding-left: 8px;
+          transition: all .4s ease;
+          opacity: 0;
+          font-size: 17px;
+          padding-left: 10px;
           color: white;
           margin: 0;
         }
       }
     }
     .navbar-join {
+          box-shadow: 0 2px 16px rgba(0, 0, 0, .3);
       height: 40px;
       width: 4px;
       background-color: white;
@@ -44,19 +48,28 @@
 }
 
 .nav-item:hover {
-  width: 138px !important;
-  height: 55px;
+  width: 154px !important;
+  height: 60px !important;
   .navbar-icons {
     font-size: 32px !important;
+  }
+  .nav-text {
+    opacity: 1 !important;
   }
 }
 
 .active {
-  width: 55px !important;
-  height: 55px !important;
+  padding: 9px !important;
+  width: 60px !important;
+  height: 60px !important;
+    background-color: white;
   .navbar-icons {
-    color: blue;
-    font-size: 32px;
+    color: darkblue !important;
+    font-size: 32px !important;
+  }
+  .nav-text {
+    color: darkblue !important;
+    opacity: 0 !important;
   }
 }
 
