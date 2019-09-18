@@ -1,4 +1,5 @@
 <div class="container-all">
+  <a id="section0"></a>
   <div class="section d-flex">
 
     <section class="home">
@@ -10,26 +11,51 @@
             <a href="">My Resume</a>
           </div>
         </div>
-      </div>
     </section>
-
     <nav class="navbar">
-      <ul class="navbar-list">
-        <li><i class="fas fa-home"></i></li>
-        <li><i class="fas fa-cogs"></i></li>
-        <li><i class="fas fa-briefcase"></i></li>
-        <li><i class="fas fa-university"></i></li>
+      <ul class="navbar-list" id="navbar-list">
+        <li class="nav-item active">
+          <a class="nav-link" href="#section0">
+            <i class="fas fa-home navbar-icons"></i>
+            <p class="nav-text">Home</p>
+          </a>
+        </li>
+        <div class="navbar-join"></div>
+        <li class="nav-item">
+          <a class="nav-link" href="#section1">
+            <i class="fas fa-cogs navbar-icons"></i>
+            <p class="nav-text">Skills</p>
+          </a>
+        </li>
+        <div class="navbar-join"></div>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2">
+            <i class="fas fa-briefcase navbar-icons"></i>
+            <p class="nav-text">Experience</p>
+          </a>
+        </li>
+        <div class="navbar-join"></div>
+        <li class="nav-item">
+          <a class="nav-link" href="#section3">
+            <i class="fas fa-university navbar-icons"></i>
+            <p class="nav-text">Education</p>
+          </a>
+        </li>
       </ul>
     </nav>
   </div>
+
+  <a id="section1"></a>
   <section class="">
       <%= render 'skills/skills_index' %>
   </section>
 
+  <a id="section2"></a>
   <section class="">
     <%= render 'projects/projects_index' %>
   </section>
 
+  <a id="section3"></a>
   <section class="">
     <%= render 'educations/educations_index' %>
   </section>

@@ -4,3 +4,8 @@
 @import "navbar";
 @import "profile_photo";
 @import "section";
+
+
+html {
+  scroll-behavior: smooth;
+}
