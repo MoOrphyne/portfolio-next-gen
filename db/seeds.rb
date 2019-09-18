@@ -120,11 +120,42 @@ puts "destroying all educations"
 Education.destroy_all
 
 puts "creating all leprachaun educations!"
-Edcuation.create(school_logo: "",
+Education.create(school_logo: "",
                 school_name: "Le Wagon",
                 duration: "Computer Programming (April-June 2019)",
                 school_description: "Attended Le Wagon Paris (Batch#250).
                 9-week intensive coding bootcamp learning HTML, CSS, Bootstrap,
                 JavaScript ES2015, SQL, git, GitHub, Heroku and Ruby on Rails.
                 Designed, implemented and shipped to production a clone of
-                AirBnB and a Rails prototype of www.maanaz.com")
+                AirBnB and a Rails prototype of www.maanaz.com",
+                school_link: "")
+puts "leprachaun education 1 created"
+Education.create(school_logo: "",
+                school_name: "Artwork VFX",
+                duration: "Concept-mood & Photobashing (Nov-Dec 2018)",
+                school_description: "Study of photographic and cinematographic
+                codes and their implementation in an image. Initiation to the
+                color (symbolic of the color, setting up of a colorscript).
+                Initiation to light in digital painting (think about the
+                physical behavior of light, knowledge of materials, texture).
+                Learning of photobashing.",
+                school_link: "")
+puts "leprachaun education 2 created"
+Education.create(school_logo: "",
+                school_name: "Com'Art",
+                duration: "Animated 3D Film Creation (2012-2015)",
+                school_description: "Creation of a story - scenario,
+                storyboarding, concept design for characters and environments,
+                composition, lighting, 3D modeling and animation, post-production
+                on Premiere and After Effects.",
+                school_link: "")
+puts "leprachaun education 3 created"
+Education.create(school_logo: "",
+                school_name: "Strate College",
+                duration: "Industrial Design (2010-2012)",
+                school_description: "Learning all art techniques(perspective,
+                painting, living model, 3D modeling...)Design concepts for
+                innovation, mobility, retail, product, & interior/exterior
+                architecture.",
+                school_link: "")
+puts "leprachaun education 4 created"
