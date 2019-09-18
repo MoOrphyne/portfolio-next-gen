@@ -4,6 +4,7 @@
 <h2>UI-UX</h2>
 <% @skills.each do |skill| %>
   <% if skill.skill_category == "UI-UX" %>
+    <%= image_tag skill.skill_image %>
     <h5><%= skill.name %></h2>
   <% end %>
 <% end %>
@@ -11,6 +12,7 @@
 <h2>Dev</h2>
 <% @skills.each do |skill| %>
   <% if skill.skill_category == "Dev" %>
+    <%= image_tag skill.skill_image %>
     <h5><%= skill.name %></h2>
   <% end %>
 <% end %>

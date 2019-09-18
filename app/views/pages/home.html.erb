@@ -1,7 +1,38 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container-all">
+  <div class="section d-flex">
+
+    <section class="home">
+        <div class="home-title">
+          <img class="profile-photo" src="https://moorphyne.github.io/portfolio/assets/images/delphine.jpg" alt="">
+          <div class="home-text">
+            <h1>Delphine Cretegny</h1>
+            <h5>UI/UX Designer - Front End Developer</h5>
+            <a href="">My Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li><i class="fas fa-home"></i></li>
+        <li><i class="fas fa-cogs"></i></li>
+        <li><i class="fas fa-briefcase"></i></li>
+        <li><i class="fas fa-university"></i></li>
+      </ul>
+    </nav>
+  </div>
+  <section class="">
+      <%= render 'skills/skills_index' %>
+  </section>
+
+  <section class="">
+    <%= render 'projects/projects_index' %>
+  </section>
+
+  <section class="">
+    <%= render 'educations/educations_index' %>
+  </section>
 
 
-<%= render 'skills/skills_index' %>
-<%= render 'projects/projects_index' %>
-<%= render 'educations/educations_index' %>
+</div>

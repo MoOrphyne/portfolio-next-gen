@@ -1,1 +1,24 @@
 // Specific CSS for your home-page
+.home {
+  height: 100vh;
+  width: 100%;
+  background-image: url('https://cdnb.artstation.com/p/assets/images/images/018/801/989/large/delphine-crty-timetravel-10-delphinephotobash.jpg?1560789868');
+  background-size: cover;
+  background-position: center;
+  transition: all 8s ease-in-out;
+  animation-name: home;
+  animation-duration: 18s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.home-title {
+  text-align: center;
+  padding-top: 15%;
+  color: white;
+}
+
+@keyframes home {
+  0%   {background-position: center;}
+  100% {background-position: right;}
+}
