@@ -1,5 +1,6 @@
 .navbar {
-  position: fixed;
+  z-index: 300;
+  position: fixed !important;
   right: 0;
   height: 100vh;
   .navbar-list {
@@ -43,7 +44,7 @@
     }
     .navbar-join {
       // box-shadow: 0 2px 16px rgba(0, 0, 0, .3);
-      height: 32px;
+      height: 24px;
       width: 4px;
       background-color: white;
       margin: 0 auto;

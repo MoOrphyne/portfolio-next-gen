@@ -1,0 +1,31 @@
+.my-carousel {
+  height: 90vh;
+}
+
+.carousel-inner {
+  height: 80vh;
+  width: 100% !important;
+  .active {
+    width: 100% !important;
+    background-color: transparent !important;
+    transition: all .4s ease;
+    // overflow: auto !important;;
+  }
+}
+
+
+.carousel-indicators {
+  bottom: 5% !important;
+  display: flex;
+  align-items: center;
+  .indicator {
+    opacity: 1;
+    transition: all .4s ease;
+    height: 20px !important;
+    width: 20px !important;
+    border-radius: 50%;
+    margin: 24px;
+    border: 3px solid white;
+    background-color: transparent;
+  }
+}

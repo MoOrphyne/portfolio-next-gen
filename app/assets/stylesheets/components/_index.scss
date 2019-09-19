@@ -5,11 +5,13 @@
 @import "profile_photo";
 @import "section";
 @import "bio";
+@import "skills";
+@import "carousel";
 
 
 html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: $light-gray;
+  background-color: $light-gray !important;
 }

@@ -1,18 +1,50 @@
-<h1>Skills#index</h1>
-<p>Find me in app/views/skills/index.html.erb</p>
+<div class="section-title">
+  <h1>Skills</h1>
+</div>
 
-<h2>UI-UX</h2>
-<% @skills.each do |skill| %>
-  <% if skill.skill_category == "UI-UX" %>
-    <%= image_tag skill.skill_image %>
-    <h5><%= skill.name %></h2>
-  <% end %>
-<% end %>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="indicator active"></li>
+      <li data-target="#myCarousel" data-slide-to="1" class="indicator"></li>
+    </ol>
 
-<h2>Dev</h2>
-<% @skills.each do |skill| %>
-  <% if skill.skill_category == "Dev" %>
-    <%= image_tag skill.skill_image %>
-    <h5><%= skill.name %></h2>
-  <% end %>
-<% end %>
+    <div class="carousel-inner">
+      <div class="item active skills-ui">
+        <div class="skill-title">
+          <h2>UI-UX</h2>
+        </div>
+        <div class="skills-all">
+          <% @skills.each do |skill| %>
+            <% if skill.skill_category == "UI-UX" %>
+              <div class="skill-detail">
+                <%= image_tag skill.skill_image, class: "skill-icon" %>
+                <div class="skill-name">
+                  <h5><%= skill.name %></h5>
+                </div>
+              </div>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="item skills-ui">
+        <div class="skill-title">
+          <h2>Dev</h2>
+        </div>
+        <div class="skills-all">
+          <% @skills.each do |skill| %>
+            <% if skill.skill_category == "Dev" %>
+              <div class="skill-detail">
+                <%= image_tag skill.skill_image, class: "skill-icon" %>
+                <div class="skill-name">
+                  <h5><%= skill.name %></h5>
+                </div>
+              </div>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+
+    </div>
+

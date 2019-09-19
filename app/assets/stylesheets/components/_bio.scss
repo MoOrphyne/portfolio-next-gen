@@ -1,7 +1,7 @@
 .bio-background {
   background-image: url(asset_path("bg-bio.png"));
   background-size: cover;
-  background-position: center;
+  background-position: 50% 20%;
   background-attachment: fixed;
 }
 
@@ -11,21 +11,15 @@
   flex-wrap: wrap;
   justify-content: space-between;
   height: 80vh;
-}
-.section-title {
-  color: $dark-blue;
-  h1 {
-    font-weight: bold;
-    font-size: 52px;
-  }
-  margin-left: 5%;
-  margin-top: 5%;
+  overflow: auto;
 }
 .all-bio {
-  width: 75%;
+  width: 65%;
+  padding-top: 10%;
   text-align: right;
   color: white;
   margin: auto 0;
-  padding-right: 20%;
+  padding-right: 15%;
   font-size: 18px;
+  padding-left: 2%;
 }
