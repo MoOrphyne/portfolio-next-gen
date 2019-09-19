@@ -1,19 +1,22 @@
 .navbar {
   position: fixed;
-  left: 0;
-  width: 110px;
+  right: 0;
   height: 100vh;
   .navbar-list {
-    width: 59px;
+    width: 40px;
     padding-left: 0;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     .nav-item{
-          box-shadow: 0 2px 16px rgba(0, 0, 0, .3);
+      // box-shadow: 0 2px 16px rgba(0, 0, 0, .3);
       transition: all .4s ease;
       list-style: none;
-      border: 3px solid white;
+      border: 2px solid white;
       border-radius: 55px;
-      padding: 12px;
-      height: 59px;
+      padding: 5px 6px;
+      height: 40px;
       width: 100%;
       overflow: hidden;
       .nav-link {
@@ -21,25 +24,26 @@
         display: flex;
         align-items: center;
         padding: 0;
-        justify-content: flex-start;
+        justify-content: flex-end;
         .navbar-icons {
           transition: all .4s ease;
           color: white;
-          font-size: 26px;
+          font-size: 22px;
         }
         .nav-text {
+          font-weight: bolder;
           transition: all .4s ease;
           opacity: 0;
           font-size: 17px;
-          padding-left: 10px;
+          padding-right: 12px;
           color: white;
           margin: 0;
         }
       }
     }
     .navbar-join {
-          box-shadow: 0 2px 16px rgba(0, 0, 0, .3);
-      height: 40px;
+      // box-shadow: 0 2px 16px rgba(0, 0, 0, .3);
+      height: 32px;
       width: 4px;
       background-color: white;
       margin: 0 auto;
@@ -48,8 +52,9 @@
 }
 
 .nav-item:hover {
+  padding: 7px !important;
   width: 154px !important;
-  height: 60px !important;
+  height: 52px !important;
   .navbar-icons {
     font-size: 32px !important;
   }
@@ -59,16 +64,16 @@
 }
 
 .active {
-  padding: 9px !important;
-  width: 60px !important;
-  height: 60px !important;
-    background-color: white;
+  padding: 7px !important;
+  width: 52px !important;
+  height: 52px !important;
+  background-color: white;
   .navbar-icons {
-    color: darkblue !important;
+    color: $dark-blue !important;
     font-size: 32px !important;
   }
   .nav-text {
-    color: darkblue !important;
+    color: $dark-blue !important;
     opacity: 0 !important;
   }
 }

@@ -2,11 +2,31 @@
   width: 100%;
   display: flex;
   justify-content: center;
+    height: 90vh;
   .home-title {
     width: 90%;
-    padding-left: 5%;
+    padding-right: 5%;
     margin: auto 0;
     text-align: center;
     color: white;
   }
+}
+
+.home-background {
+  background-image: url('https://cdnb.artstation.com/p/assets/images/images/018/801/989/large/delphine-crty-timetravel-10-delphinephotobash.jpg?1560789868');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  transition: all 8s ease-in-out;
+  animation-name: home;
+  animation-duration: 18s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes home {
+  0%   {background-position: center;}
+  100% {background-position: right;}
 }

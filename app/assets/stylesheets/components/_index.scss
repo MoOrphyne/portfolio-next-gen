@@ -4,8 +4,12 @@
 @import "navbar";
 @import "profile_photo";
 @import "section";
+@import "bio";
 
 
 html {
   scroll-behavior: smooth;
+}
+body {
+  background-color: $light-gray;
 }
