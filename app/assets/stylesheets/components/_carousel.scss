@@ -2,9 +2,10 @@
   height: 90vh;
 }
 
-.carousel-inner {
+#carousel-inner {
   height: 80vh;
   width: 100% !important;
+  overflow: auto !important;
   .active {
     width: 100% !important;
     background-color: transparent !important;
